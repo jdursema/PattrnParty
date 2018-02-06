@@ -177,6 +177,10 @@ p{
   h5{
     width: 95%;
   }
+  
+  .mobile-hidden{
+    display: none;
+  }
 
 }
 
