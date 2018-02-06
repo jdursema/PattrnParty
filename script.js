@@ -3,7 +3,11 @@ const changeTab = (event) => {
   $(event.target).addClass('selected')
   $('.card').addClass('hidden')
   $(`.card-${$(event.target).attr('id')}`).removeClass('hidden')
-
 }
 
-$('h4').on('click', changeTab)
+const openCard = (event) => {
+$(event.target).next().toggleClass('mobile-hidden')
+}
+
+$('.desktop-tab').on('click', changeTab)
+$('.mobile').on('click', openCard)
