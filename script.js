@@ -7,6 +7,7 @@ const changeTab = (event) => {
 
 const openCard = (event) => {
 $(event.target).next().slideToggle('.mobile-hidden')
+$(event.target).children('div').toggleClass('open')
 }
 
 $('.desktop-tab').on('click', changeTab)
