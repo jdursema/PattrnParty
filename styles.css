@@ -27,11 +27,13 @@ h2{
 
 h3{
   text-transform: uppercase;
+  margin: 2% 1%;
+  width: 165px;
+  margin: 5px auto;
 }
 
 hr{
-  width: 80%;
-  
+  width: 85%;
 }
 
 .pattern-title{
@@ -40,7 +42,7 @@ hr{
 }
 
 .card-info{
-  border: 1px solid #D1D2D3;
+  border: 2px solid #D1D2D3;
   border-top: none;
   padding: 20px;
   background: white;
@@ -53,7 +55,11 @@ hr{
   position: relative;
   width: 25%;
   border-right: #FFFFFF solid 1px;
-  border-bottom: #D1D2D3 solid 1px;
+  border-bottom: #D1D2D3 solid 2px;
+}
+
+.tab4{
+  border-right: none;
 }
 
 .card{
@@ -106,6 +112,7 @@ p{
 .all-tabs{
   display: flex;
   text-align: center;
+  color: #666666;
 }
 
 .card-and-tabs{
@@ -117,12 +124,27 @@ p{
 .card-area{
   display: flex;
   justify-content: center;
+  margin: 3% 0;
 }
 
 .selected{
   background-color: #FFFFFF;
-  border: solid 1px #D1D2D3;
+  border: solid 2px #D1D2D3;
   border-bottom: none;
+  font-weight: 800;
+}
+
+.code{
+  width: 80%;
+  margin-bottom: 5%;
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .hidden{
@@ -132,7 +154,121 @@ p{
   display: none;
 }
 
+.view-code-btn{
+  background-color: #3F3244;
+  padding: 10px 0;
+  width: 200px;
+  color: #F2F2F2;
+  margin: 5%;
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+
+.all-cards{
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 250px 250px 250px;
+  grid-gap: 20px;
+  grid-auto-rows: 250px 250px 250px;
+}
+
+.flex-card{
+  border: #D1D2D3 solid 2px;
+}
+
+.flex-card h5{
+  padding: 10px 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background-color: white;
+}
+
+.card-a{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  background-image: url('http://images.mentalfloss.com/sites/default/files/styles/mf_image_3x2/public/istock_100323527_small.jpg?itok=oiujRZ-o&resize=1100x740');
+  background-position: center;
+  background-size: cover;
+}
+
+.card-b{
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  background-image: url('https://media1.popsugar-assets.com/files/thumbor/WDpNvfIXDs7v_7a2pJyCr2VW8EI/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2013/11/06/007/n/1922243/5e1028364f5bba97_thumb_temp119650771383779195/i/What-Difference-Between-Pembroke-Welsh-Corgi-Cardigan-Welsh-Corgi.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.card-c{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  background-image: url('https://i.pinimg.com/736x/6a/b6/36/6ab63673e1781d7214cacd519e1b2776.jpg');
+  background-position: center;
+  background-size: cover;
+}
+.card-d{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  background-image: url('http://postkitty.com/sites/default/files/styles/post_cover/public/articles/2017/09/story/26/cute-corgi-dog_1.jpg?itok=i8NbudKD');
+  background-position: center;
+  background-size: cover;
+}
+
+.card-e{
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  background-image: url('https://img.buzzfeed.com/buzzfeed-static/static/2017-11/15/23/campaign_images/buzzfeed-prod-fastlane-01/corgis-are-cancelled-and-basset-hounds-have-taken-2-7643-1510805714-0_dblbig.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.card-f{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 3;
+  background-image: url('https://pawster.com/wp-content/uploads/2016/10/Fotolia_164383181_S.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.card-g{
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 3;
+  background-image: url('https://barkpost.com/wp-content/uploads/2015/01/corgi2.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+
+
+
 @media screen and (max-width: 700px){
+  header{
+    flex-direction: column;
+    text-align: center;
+
+  }
+
+  hr{
+    display: none;
+  }
+
   .all-tabs{
     display: none;
   }
@@ -147,6 +283,10 @@ p{
     background-position: top;
   }
 
+  .card-text{
+    width: 95%;
+  }
+
   .card-image{
     width: 100%;
     height: 250px;
@@ -157,7 +297,7 @@ p{
     display: flex;
     top: 0;
     left: 0;
-    width: 76.5vw;
+    width: 74vw;
     border: #D1D2D3 solid 1px;
     text-align: center;
     align-self: center;
@@ -166,7 +306,7 @@ p{
     justify-content: space-between;
   }
 
-  .open-close-icon{
+  .close-icon{
     background-image: url('./substract.svg');
     background-size: cover;
     background-position: center;
@@ -174,14 +314,23 @@ p{
     height: 10px;
   }
 
-  h5{
-    width: 95%;
-  }
-  
-  .mobile-hidden{
-    display: none;
+  .open{
+    background-image: url('./add.svg');
   }
 
+  .all-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 10px;
+    align-items: center;
+  }
+
+  .flex-card{
+    margin: 10px 0;
+    width: 80vw;
+    height: 40vh;
+  }
 }
 
 
