@@ -220,7 +220,7 @@ footer{
   grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 2;
-  background-image: url('http://postkitty.com/sites/default/files/styles/post_cover/public/articles/2017/09/story/26/cute-corgi-dog_1.jpg?itok=i8NbudKD');
+  background-image: url('http://images.mentalfloss.com/sites/default/files/styles/insert_main_wide_image/public/istock_000016847174_small_1.jpg');
   background-position: center;
   background-size: cover;
 }
@@ -255,7 +255,40 @@ footer{
   background-size: cover;
 }
 
+.header-bar{
+  background-color: #D1D2D3;
+  display: flex;
+  justify-content: space-around;
+  min-height: 80px;
+  align-items: center;
+  margin: 3% 0;
+}
 
+.menu-image{
+  background-image: url('https://img.buzzfeed.com/buzzfeed-static/static/2013-09/enhanced/webdr06/25/11/enhanced-buzz-23027-1380121492-13.jpg?downsize=715:*&output-format=auto&output-quality=auto');
+  background-size: cover;
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+}
+
+.nav-link{
+  border: none;
+  background: #D1D2D3;
+  color: #666666;
+  font-size: 18px;
+}
+
+.nav-link:hover{
+  color: white;
+}
+
+.search-input{
+  width: 250px;
+  font-size: 18px;
+  border: 1px solid #666666;
+  padding: 8px;
+}
 
 
 @media screen and (max-width: 700px){
