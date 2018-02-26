@@ -22,6 +22,14 @@ const toggleCode = () => {
   }
 }
 
+const toggleOpenMenu = () => {
+
+  $('.all-links').slideToggle('.open-menu')
+}
+
+
+
 $('.desktop-tab').on('click', changeTab)
 $('.mobile').on('click', openCard)
 $('.view-code-btn').on('click', toggleCode)
+$('.menu-title').on('click', toggleOpenMenu)

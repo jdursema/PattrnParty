@@ -28,7 +28,6 @@ h2{
 h3{
   text-transform: uppercase;
   margin: 2% 1%;
-  width: 165px;
   margin: 5px auto;
 }
 
@@ -290,8 +289,23 @@ footer{
   padding: 8px;
 }
 
+.menu{
+  display: flex;
+}
+
+.menu-title{
+  display: none;
+}
+
+.all-links{
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+}
+
 
 @media screen and (max-width: 700px){
+
   header{
     flex-direction: column;
     text-align: center;
@@ -364,6 +378,46 @@ footer{
     width: 80vw;
     height: 40vh;
   }
+
+  .header-bar{
+    flex-direction: column;
+  }
+  .menu{
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .menu-title{
+    display: inline-block;
+    width: 25%;
+    margin: 0;
+  }
+  .menu{
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 75px;
+  }
+
+  .all-links{
+    display: none;
+    background-color: #D1D2D3;
+  }
+
+  .open-menu{
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    height: 700px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+
+  
 }
 
 
